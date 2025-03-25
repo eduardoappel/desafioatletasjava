@@ -75,7 +75,19 @@ public class Appilcation {
                 alturaMediaMulheres = somaAlturaMulheres / totalMulheres;
             }
 
-        }        
+        } 
+        
+        System.out.println("RELATÓRIO: ");
+        System.out.printf("Peso médio dos atletas: %.2f%n ", pesoMedio / n);
+        System.out.printf("Atleta mais alto: %s%n ", nomeMaisAlto);
+        System.out.printf("Porcentagem de homens: %.1f%% %n", porcentagemHomens);
+                
+        if (alturaMediaMulheres == 0) {
+            System.out.println("Não há mulheres cadastradas");
+            
+        }else{
+            System.out.printf("Altura média das mulheres:  %.2f%n ", alturaMediaMulheres);
+        }
 
         sc.close();
     }
